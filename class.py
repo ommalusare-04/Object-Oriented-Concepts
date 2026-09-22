@@ -9,6 +9,9 @@ class Vector2D:
     def sub(self, v):
         return Vector2D(self.x - v.x, self.y - v.y)
 
+    def mul(self, v):
+            return Vector2D(self.x * v.x, self.y * v.y)
+
     def display(self):
         print("(", self.x, ",", self.y, ")")
 
@@ -21,4 +24,9 @@ v3.display()
 v1=Vector2D(4,6)
 v2=Vector2D(2,3)
 v3=v1.sub(v2)
+v3.display()
+
+v1=Vector2D(4,6)
+v2=Vector2D(2,3)
+v3=v1.mul(v2)
 v3.display()
